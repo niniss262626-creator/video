@@ -1,0 +1,92 @@
+import { HardwarePreset, MotionPreset } from '../types';
+
+export const HARDWARE_PRESETS: HardwarePreset[] = [
+  {
+    id: 'gpu-rtx4090',
+    name: 'NVIDIA GeForce RTX 4090',
+    category: 'Ekran Kartı (GPU)',
+    badge: 'GPU',
+    description: 'Üç fanlı, adreslenebilir RGB ve kalın soğutma bloklu amiral gemisi grafik kartı.',
+    imageUrl: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1200&q=80',
+    defaultPrompt: 'Cinematic 3D slow camera orbit around an illuminated high-end RTX graphics card, three cooling fans spinning smoothly with prismatic RGB lighting and aluminum reflections.',
+  },
+  {
+    id: 'cpu-socket',
+    name: 'AMD Ryzen 9 / AM5 İşlemci',
+    category: 'İşlemci (CPU)',
+    badge: 'CPU',
+    description: 'Altın pinli soket ve gümüş ısı dağıtıcılı yüksek performanslı işlemci yongası.',
+    imageUrl: 'https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1200&q=80',
+    defaultPrompt: 'Cinematic macro camera push into a silicon CPU processor die, glowing gold contact pins, microscopic laser etched circuits pulsing with electric light.',
+  },
+  {
+    id: 'motherboard-gaming',
+    name: 'ROG Gaming Anakart',
+    category: 'Anakart (Motherboard)',
+    badge: 'Motherboard',
+    description: 'PCIe 5.0 yuvaları, M.2 zırhları ve dijital güç fazlarına sahip donanım mimarisi.',
+    imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+    defaultPrompt: 'Sweeping drone-style camera flying low over a high-tech gaming motherboard, copper traces lighting up sequentially with cyber blue neon data pulses.',
+  },
+  {
+    id: 'ram-rgb',
+    name: 'DDR5 RGB Bellek Kiti',
+    category: 'RAM Bellek',
+    badge: 'RAM',
+    description: 'Fırçalanmış alüminyum soğutucu ve difüze edilmiş akıcı RGB ışık çubuğu.',
+    imageUrl: 'https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=1200&q=80',
+    defaultPrompt: 'Dynamic camera glide across DDR5 RGB RAM modules, pulsating neon gradients reflecting on brushed black aluminum heat spreaders.',
+  },
+  {
+    id: 'custom-watercooled',
+    name: 'Özel Sıvı Soğutma Bloğu',
+    category: 'Sıvı Soğutma',
+    badge: 'Cooling',
+    description: 'Şeffaf akrilik su bloğu ve parıldayan UV reaktif soğutma sıvısı döngüsü.',
+    imageUrl: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80',
+    defaultPrompt: 'Slow-motion close up of vibrant luminous coolant flowing rapidly through transparent acrylic watercooling micro-channels with tiny bubbles and LED glow.',
+  },
+];
+
+export const MOTION_PRESETS: MotionPreset[] = [
+  {
+    id: 'orbit-rgb',
+    title: '360° Sinematik Dönüş & RGB',
+    description: 'Kamera parçanın etrafında dönerken fanlar çalışır ve RGB ışıklar parıldar.',
+    iconName: 'RotateCw',
+    promptTurkish: 'Kamera bilgisayar parçasının etrafında 360 derece yavaşça döner, fanlar yumuşakça hızlanır ve adreslenebilir RGB ışıklar renk geçişi yapar.',
+    promptEnglish: 'Cinematic 360-degree rotational camera spin around the hardware component, cooling fans smoothly accelerating, vibrant addressable RGB lighting pulsating across the heatsink.',
+  },
+  {
+    id: 'power-on',
+    title: 'Sistem Başlatma & Enerji Akışı',
+    description: 'Parçaya aniden güç gelir, PCB yolları ışıldar ve fanlar tam güce çıkar.',
+    iconName: 'Zap',
+    promptTurkish: 'Donanım açılış sekansı: PCB devre yollarından parlak neon mavi elektrik akımı geçer, durum LEDleri yanıp söner ve soğutma fanı güçlü bir hava akımıyla devreye girer.',
+    promptEnglish: 'System boot sequence: luminous electric pulses travel through the PCB microcircuit traces, indicator LEDs flicker to life, and the cooling fans spool up dramatically with realistic airflow shimmer.',
+  },
+  {
+    id: 'macro-zoom',
+    title: 'Mikro Çip Makro Odak',
+    description: 'Silikon yonga ve lehim detaylarına doğru sinematik derinlikli yakın çekim.',
+    iconName: 'Cpu',
+    promptTurkish: 'Aşırı yakın makro çekim: Kamera silikon kalıba ve altın bağlantı noktalarına doğru ağır çekimde yaklaşır, sığ alan derinliği ve metalik yansımalar.',
+    promptEnglish: 'Ultra close-up macro dolly camera moving slowly across the silicon die and gold contact pins, extreme shallow depth of field, metallic glints and studio rim lighting.',
+  },
+  {
+    id: 'cryo-cooling',
+    title: 'Kriyo Soğutma & Sis Efekti',
+    description: 'Soğutma bloklarından duman ve buhar yükselirken donma buğusu efekti.',
+    iconName: 'Sparkles',
+    promptTurkish: 'Ekstrem soğutma efekti: Soğutma kanatçıklarının arasından hafif duman ve sıvı nitrojen buharı süzülür, metal yüzeylerde donma ve yoğunlaşma parıltısı.',
+    promptEnglish: 'Extreme cryogenic cooling effect: subtle atmospheric mist and vapor drift across the nickel-plated cooling fins, frost condensation glimmers under cyan and magenta studio keylights.',
+  },
+  {
+    id: 'exploded-assembly',
+    title: 'Yarı Saydam Havalanma & Montaj',
+    description: 'Soğutucu gövde ve fanlar hafifçe ayrılarak havada süzülür.',
+    iconName: 'Layers',
+    promptTurkish: 'Hafif patlatılmış montaj görünümü: Parça bileşenleri havada hafifçe ayrılır, parçaların iç mimarisi ve ısı boruları parıldar ardından pürüzsüzce birleşir.',
+    promptEnglish: 'Futuristic exploded view animation: the outer shroud, heatsink fins, and heatpipes gently levitate apart to reveal inner copper architecture, glowing softly before smoothly locking back into place.',
+  },
+];

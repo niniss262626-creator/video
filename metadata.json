@@ -1,0 +1,6 @@
+{
+  "name": "PC Parça Video Stüdyosu - Hardware to Video AI",
+  "description": "Bilgisayar parçaları fotoğraflarını Veo 3.1 yapay zekası ile sinematik ve hareketli videolara dönüştürün.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
